@@ -1,0 +1,194 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: inherit;
+}
+
+#main {
+
+}
+
+#header {
+    height: 85px;
+    width: auto;
+    background-color: red;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav, .subnav {
+    list-style-type: none;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav > li > a {
+    color: white;
+    line-height: 33px;
+}
+
+#nav li a {
+    float: left;
+    line-height: 68px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    display: block;
+    font-weight: 400; 
+    width: 100%;
+    
+}
+
+#nav li:hover a {
+    color: black;
+    text-decoration: underline;   
+}
+
+#nav .subnav li:hover a{
+    color: #fff;
+    background-color: red;
+}
+
+#nav .subnav {
+    display: none;
+    top: 80px;
+    min-width: 200px;
+    position: absolute;
+    padding: 0, 12px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .sunav a {
+    color: black;
+    padding: 0 12px;
+    line-height: 38px;
+
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#header .search-btn {
+    float: right;
+   padding-left: 21px;
+   padding-right: 21px;
+    cursor: pointer;
+}
+
+#header .search-btn:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+#header .search-icon {
+    color: #fff;
+    font-size: 20px;
+    line-height: 85px;
+    height: 35px;
+    width: 27px;
+}
+
+#slider {
+    /* position: relative; */
+    margin-top: 85px;
+    padding-top: 20%;
+    background: url('/assets/image/slide/image1.jpg') top center / cover no-repeat;
+}
+
+#content {
+    max-width: inherit;
+}
+
+.search-area {
+    margin-bottom: 10px;
+}
+.contain-checkbox {
+    padding-bottom: 10px;
+    width: 100%;
+}
+.search-area .content-name {
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+.check-box {
+    padding-right: 25px;
+}
+.box {
+    margin-right: 15px;
+}
+.select-motor {
+    height: 33px;
+    line-height: 33px;
+    padding-left: 8px;
+    padding-right: 20px;
+}
+.search-button {
+    margin-top: 16px;
+    padding: 6px 12px;
+    width: 124px;
+    background-color: red;
+    color: #fff;
+}
+.search-button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+#content .content-container .motor-list li {
+    list-style-type: none;
+    padding: 0 5px;
+    float: left;
+    width: 10%;
+}
+
+#content .content-container {
+    padding: 15px 15px;
+}
+
+#content .content-container .content-menu {
+    padding: 15px 0;
+    margin-bottom: 10px;
+}
+
+#content .content-container .content-menu .content-name {
+    font-size: 16px;
+}
+
+#content .content-container .content-menu .content-watch-all {
+    font-size: 14px;
+    float: right;
+    margin-top: -18px;
+}
+
+.motor-list .motor-link .motor-item {
+    height: 67px;
+    width: 67px;
+    float: left;
+    padding: 0 5px;
+    border: 1px solid #000;
+}
+
+#footer {
+
+}
