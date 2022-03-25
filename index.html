@@ -24,11 +24,16 @@
     <script>
         $(document).ready(function() {
             $("#search-box").hover(function() {
-                $("#search-box__input").css("display", "block");
+                $("#search-box__input").css({"width": "320px", "padding": "0 12px"});
+                $("#search-box__input").addClass('search-box__expanded');
             });
             $(this).click(function() {
-                $("#search-box__input").css("display", "none");
-            })
+                if ($(this).click != $('#search-box__input')) {
+                    $("#search-box__input").css({"width": "0", "padding": "0"});
+                    $("#search-box__input").removeClass('search-box__expanded');
+                    
+                }
+            });
         });
     </script>
 </head>
@@ -56,6 +61,7 @@
 
             <!-- phần bên phải bao gồm đăng nhập, đăng kí và search box -->
             <div class="header-right">
+
                 <ul class="login-box">
                     <li class="login">
                         <a href="">Đăng nhập</a>
@@ -64,12 +70,14 @@
                         <a href="">Đăng ký</a>
                     </li>
                 </ul>
+
                 <div id="search-box">
-                    <input id="search-box__input" type="text" placeholder="Search...">
+                    <input id="search-box__input" type="text" placeholder="Tìm kiếm...">
                     <a href="" id="search-btn">
                         <ion-icon class="search-box__icon" name="search-outline"></ion-icon>
                     </a>
                 </div>
+
             </div>
         </div>
     </header>
