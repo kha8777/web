@@ -5,3 +5,11 @@ $(document).ready(function() {
     });
 });
 
+document.addEventListener('click', function(e) {
+    var target = e.target;
+    var input = document.getElementById('search-box__input');
+    if (target.id != 'search-box__input') {
+        input.style.width = '0';
+        input.style.padding = '0';
+    }
+}, false);
