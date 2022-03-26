@@ -1,9 +1,12 @@
 body {
     margin: 0;
 }
+:root {
+    --primary-color: #cc0000;
+
+}
 
 * {
-    --primary-color: #D40000;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
