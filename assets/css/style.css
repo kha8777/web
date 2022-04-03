@@ -159,7 +159,7 @@ ul {
     position: relative;
 }
 
-.nav-bar__item-link:hover {
+.nav-bar__item:hover .nav-bar__item-link {
     color: white;
 }
 
@@ -182,8 +182,8 @@ ul {
     right: 50%;
 }
 
-.nav-bar__item-link:hover::after,
-.nav-bar__item-link:hover::before {
+.nav-bar__item:hover .nav-bar__item-link::after,
+.nav-bar__item:hover .nav-bar__item-link::before {
     width: 50%;
 }
 
@@ -229,6 +229,7 @@ ul {
     display: flex;
     justify-content: flex-end;
     background-color: white;
+    transition: all .2s ease-in-out;
 }
 
 .search-box__expanded {
