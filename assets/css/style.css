@@ -65,7 +65,7 @@ ul {
 .sub-nav__list {
     position: absolute;
     top: 12px;
-    right: 0px;
+    left: 100%;
     min-width: 160px;
     background-color: var(--transparent);
     box-shadow:
