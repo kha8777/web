@@ -4,6 +4,7 @@ body {
 :root {
     --primary-color: #C74B50;
     --primary-color-2: #890F0D;
+    --nav-text-color: #ddd;
     --primary-color-trans: rgba(204, 0, 0, .1);
     --border-ios-1: rgb(180, 180, 180);
     --border-ios-2: rgb(240, 240, 240);
@@ -62,10 +63,23 @@ ul {
     display: block;
 }
 
+.nav-bar__dropdown-icon {
+    position: absolute;
+    right: 0;
+    color: var(--nav-text-color);
+    font-size: 16px;
+    transition: all ease .3s;
+}
+
+.nav-bar__item:hover .nav-bar__dropdown-icon {
+    transform: rotate(-90deg);
+    color: white;
+}
+
 .sub-nav__list {
     position: absolute;
     top: 12px;
-    left: 100%;
+    left: 110%;
     min-width: 160px;
     background-color: white;
     box-shadow:
@@ -134,7 +148,7 @@ ul {
     background-color: var(--primary-color-trans);
 }
 .nav-bar__item-link {
-    color: #ddd;
+    color: var(--nav-text-color);
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -191,7 +205,7 @@ ul {
 
 .login a {
     text-decoration: none;
-    color: #ddd;
+    color: var(--nav-text-color);
     font-weight: 600;
 }
 
@@ -201,7 +215,7 @@ ul {
 
 .login:last-child {
     padding-left: 8px;
-    border-left: 1px solid #ddd;
+    border-left: 1px solid var(--nav-text-color);
 }
 
 .login a:hover {
