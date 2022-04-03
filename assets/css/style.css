@@ -5,6 +5,8 @@ body {
     --primary-color: #C74B50;
     --primary-color-2: #890F0D;
     --nav-text-color: #ddd;
+    --line-color-white: rgba(255, 255, 255, .2);
+    --line-color-black: rgba(0, 0, 0, .2);
     --primary-color-trans: rgba(204, 0, 0, .1);
     --border-ios-1: rgb(180, 180, 180);
     --border-ios-2: rgb(240, 240, 240);
@@ -215,7 +217,7 @@ ul {
 
 .login:last-child {
     padding-left: 8px;
-    border-left: 1px solid var(--nav-text-color);
+    border-left: 1px solid var(--line-color-white);
 }
 
 .login a:hover {
