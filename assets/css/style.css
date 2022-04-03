@@ -67,7 +67,7 @@ ul {
     top: 12px;
     left: 100%;
     min-width: 160px;
-    background-color: var(--transparent);
+    background-color: white;
     box-shadow:
         1px 1px 1px 0 var(--border-ios-2) inset,
         1px 1px 1px 0 var(--border-ios-1),
@@ -84,7 +84,7 @@ ul {
     content: "";
     display: block;
     border-width: 12px 6px 12px 0;
-    border-color: transparent var(--transparent) transparent transparent;
+    border-color: transparent white transparent transparent;
     border-style: solid;
     position: absolute;
     left: -6px;
