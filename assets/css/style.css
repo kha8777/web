@@ -252,3 +252,85 @@ ul {
 main {
     margin-top: 80px;
 }
+/* Code của Quân */
+#form_wrap {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--transparent);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.form {
+    background-color: #ddd;
+    height: 60%;
+    width: 50%;
+    border-radius: 16px;
+    position: relative;
+}
+.form .form_header .form_header-title h1 {
+    margin: 30px 32px;
+    color: var(--primary-color-2);
+}
+.close {
+    right: 0;
+    position: absolute;
+    top: 6%;
+    margin-right: 25px;
+    font-size: 40px;
+    display: block;
+}
+.close:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+.form_main label {
+    margin-left: 6%;
+    font-size: 16px;
+    display: block;
+}
+.user-input, .pwd-input {
+    margin-left: 6%;
+    border-radius: 12px;
+    padding: 12px;
+    width: 85%;
+}
+.form__footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+}
+.switch-form {
+    margin-left: 6%;
+    text-decoration: none;
+    color: var(--primary-color-2);
+}
+.switch-form:hover {
+    opacity: 0.8;
+}
+.footer_btn {
+    margin-right: 10%;
+}
+.btn-cancel {
+    margin-right: 24px;
+    padding: 12px 36px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn-cancel:hover {
+    opacity: 0.8;
+}
+.btn-ok {
+    background-color: var(--primary-color-2);
+    color: white;
+    margin-right: 0;
+    padding: 12px 36px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn-ok:hover {
+    opacity: 0.8;
+}
