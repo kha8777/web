@@ -11,9 +11,7 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="./assets/font/themify-icons-font/themify-icons/themify-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
-
-    <title>Form đăng kí</title>
+    <title>Form đăng ký</title>
 </head>
 
 <body>
@@ -21,31 +19,21 @@
         <div class="form">
             <div class="form__header">
                 <div class="form__header-title">
-                    <h1>Đăng kí</h1>
+                    <h1>Đăng ký</h1>
                 </div>
                 <div class="close">
                     <ion-icon name="close-outline"></ion-icon>
                 </div>
             </div>
             <div class="form__main">
-                <div class="user-label">
-                    <label for="username">Tên tài khoản</label>
-                    <br>
-                    <input type="email" class="user-input" placeholder="abc123" minlength="6" required>
-                </div>
-                <br>
-                <br>
-                <div class="pwd-label">
-                    <label for="password">Mật khẩu</label >
-                    <br>
-                    <input type="password" class="pwd-input" minlength="6" required>
-                </div>
-                <br>
-                <div class="repwd-label">
-                    <label for="password">Nhập lại mật khẩu</label >
-                    <br>
-                    <input type="password" class="pwd-input" minlength="6" required>
-                </div>
+                <div class="user-label">Tên tài khoản</div>
+                <input type="email" class="user-input" placeholder="Username" required>
+
+                <div class="pwd-label">Mật khẩu</div>
+                <input type="password" class="pwd-input" required>
+
+                <div class="repwd-label">Nhập lại mật khẩu</div>
+                <input type="password" class="pwd-input" minlength="6" required>
            </div>
 
             <div class="form__footer">
