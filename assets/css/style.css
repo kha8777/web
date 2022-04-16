@@ -1,6 +1,7 @@
 body {
     margin: 0;
 }
+
 :root {
     --primary-color: #C74B50;
     --primary-color-2: #890F0D;
@@ -14,6 +15,13 @@ body {
     --black-transparent: rgba(0, 0, 0, .5);
 }
 
+/* 
+dùng cho animation
+cách dùng: 
+    animation: growth time style;
+ví dụ: 
+    animation: growth .2s ease;
+*/
 @keyframes growth {
     from {
         opacity: 0;
@@ -41,6 +49,7 @@ ul {
     list-style: none;
 }
 
+/* css cho phần header */
 .header-box {
     background-image: linear-gradient(-45deg, var(--primary-color), var(--primary-color-2));
     height: 80px;
@@ -54,6 +63,7 @@ ul {
     top: 0;
 }
 
+/* phần navigation bar, bao gồm: trang chủ, sản phẩm, giới thiệu, hãng xe */
 .nav-bar__list {
     margin: 0;
     display: flex;
@@ -85,6 +95,7 @@ ul {
     color: white;
 }
 
+/* sub-navigation của sản phẩm và hãng xe */
 .sub-nav__list {
     position: absolute;
     top: 12px;
@@ -156,6 +167,7 @@ ul {
     cursor: pointer;
     background-color: var(--primary-color-trans);
 }
+
 .nav-bar__item-link {
     color: var(--nav-text-color);
     text-decoration: none;
@@ -196,6 +208,7 @@ ul {
     width: 50%;
 }
 
+/* phần header bên phải, bao gồm đăng nhập, đăng ký và phần tìm kiếm */
 .header-right {
     display: flex;
     flex-direction: column;
@@ -205,6 +218,7 @@ ul {
     height: 100%;
 }
 
+/* chứa phần đăng nhập và đăng ký */
 .login-box {
     display: flex;
     margin: 4px 0 0 0;
@@ -232,7 +246,8 @@ ul {
     color: white;
 }
 
-.signup-form-wrap {
+/* phần form đăng nhập và đăng ký */
+.signup-form-wrap, .login-form-wrap {
     position: fixed;
     display: flex;
     top: 0;
@@ -308,7 +323,7 @@ ul {
     margin: 32px 20px 0;
 }
 
-.switch-form {
+.switch-signup-form, .switch-login-form {
     font-weight: 700;
     text-decoration: none;
     color: var(--primary-color-2);
@@ -344,11 +359,12 @@ ul {
     cursor: pointer;
 }
 
-.switch-form:hover, .btn-cancel:hover, .btn-ok:hover {
+.switch-signup-form:hover, .switch-login-form:hover, .btn-cancel:hover, .btn-ok:hover {
     opacity: 0.8;
     cursor: pointer;
 }
 
+/* phần tìm kiếm */
 .search-box {
     border: none;
     border-radius: 5px;
@@ -453,6 +469,7 @@ main {
     margin-top: 80px;
 }
 
+/* cái banner ở phần main */
 .banner {
     width: 100%;
 }

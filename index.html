@@ -39,6 +39,8 @@
                     <div class="nav-bar__dropdown-icon">
                         <ion-icon name="chevron-down-outline"></ion-icon>
                     </div>
+
+                    <!-- sub-nav của sản phẩm -->
                     <ul class="sub-nav__list">
                         <li class="sub-nav__item">
                             <a href="">Xe 50cc</a>
@@ -62,6 +64,8 @@
                     <div class="nav-bar__dropdown-icon">
                         <ion-icon name="chevron-down-outline"></ion-icon>
                     </div>
+
+                    <!-- sub-nav của hãng xe -->
                     <ul class="sub-nav__list">
                         <li class="sub-nav__item sub-nav__item--has-img">
                             <img src="./assets/image/motor-brand/honda.jpg" alt="">
@@ -134,7 +138,7 @@
 
                                 <div class="pwd">
                                     <div class="pwd-label">Mật khẩu</div>
-                                    <input type="text" class="pwd-input" id="pwd-input" placeholder="Mật khẩu chứa ít nhất 6 ký tự" onblur="checkPwd()">
+                                    <input type="password" class="pwd-input" id="pwd-input" placeholder="Mật khẩu chứa ít nhất 6 ký tự" onblur="checkPwd()">
                                     <span class="pwd-error" id="pwd-error"></span>
                                 </div>
                 
@@ -146,7 +150,7 @@
                            </div>
                 
                             <div class="form__footer">
-                                <a href="#" class="switch-form">Đã có tài khoản?</a>
+                                <div class="switch-login-form">Đã có tài khoản?</div>
                                 <div class="footer__btn">
                                     <button class="btn-cancel">Hủy</button>
                                     <button class="btn-ok">Đăng ký</button>
@@ -155,8 +159,46 @@
                             
                         </div>
                     </div>
+
+                    <!-- form đăng nhập -->
+                    <div class="login-form-wrap">
+                        <div class="form">
+                            <div class="form__header">
+                                <div class="form__header-title">
+                                    <h1>Đăng nhập</h1>
+                                </div>
+                                <div class="close">
+                                    <ion-icon name="close-outline"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="form__main">
+                                <div class="user">
+                                    <div class="user-label">Tên tài khoản</div>
+                                    <input type="text" class="user-input" id="user-input" placeholder="Tài khoản" onblur="checkUser()">
+                                    <span class="user-error" id="user-error"></span>
+                                </div>
+
+                                <div class="pwd">
+                                    <div class="pwd-label">Mật khẩu</div>
+                                    <input type="password" class="pwd-input" id="pwd-input" placeholder="Mật khẩu" onblur="checkPwd()">
+                                    <span class="pwd-error" id="pwd-error"></span>
+                                </div>
+                           </div>
+                
+                            <div class="form__footer">
+                                <div class="switch-signup-form">Chưa có tài khoản?</div>
+                                <div class="footer__btn">
+                                    <button class="btn-cancel">Hủy</button>
+                                    <button class="btn-ok">Đăng nhập</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
                 </ul>
 
+                <!-- phần tìm kiếm -->
                 <div class="search-box">
                     <input class="search-box__input" type="text" placeholder="Tìm kiếm...">
                     <a href="" class="search-btn">
