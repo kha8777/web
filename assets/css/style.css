@@ -473,3 +473,87 @@ main {
 .banner {
     width: 100%;
 }
+
+
+/* Footer */
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+/*Test*/
+.grid__column-2 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 25%;
+}
+
+.grid__column-2-4 {
+    padding-left: 5%;
+    padding-right: 0;
+    width: 25%;
+}
+.footer {
+    padding-top: 16px;
+    border-top: 4px solid #fB9086;
+    background-color: #f3f3f3;
+}
+
+.footer__heading {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+.footer-list {
+    padding-left: 0;
+    list-style: none; /*Bỏ dấu chấm danh sách*/
+}
+
+.footer-item__link {
+    text-decoration: none; /*Bỏ gạch chân*/
+    font-size: 18px;
+    color: #212121;
+    padding: 2px 0;
+    display: block;
+    display: flex;
+    align-items: center;
+}
+
+.footer-item__link:hover {
+    color: #c00;
+}
+
+.footer-item__icon {
+    font-size: 1.6rem;
+    margin: -1px 8px 0 0;
+}
+
+.logo_BoCT {
+    height: 65px
+}
+
+.footer_-bottom {
+    padding: 18px 0;
+    background-color: #f5f5f5;
+    margin-top: 36px;
+}
+
+.footer__text {
+    margin: 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
