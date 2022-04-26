@@ -468,11 +468,139 @@ ul {
 main {
     margin-top: 80px;
 }
-
 /* cái banner ở phần main */
 .banner {
     width: 100%;
 }
+/* Phần main */
+/* Phần danh mục các loại xe */
+#motor_type {
+    background-color: #fff;
+    width: 1000px;
+    margin: 0px auto;
+    /* height: 200px; */
+    box-shadow: 5px 5px 10px #8888;
+    border: 1px solid #f5f5f5;
+}
+.ct_type {
+    margin-left: 20px;
+    font-weight: 500;
+}
+.menu {
+    display: flex;
+}
+.menu .menu_motor_type {
+    padding: 0 40px;
+    float: left;
+}
+.type_1, .type_2, .type_3, .type_5 {
+    width: 118px;
+    height: 70px;
+}
+.type_4 {
+    width: 118px;
+    height: 70px;
+    border: 1px solid #000;
+}
+.type_1:hover, .type_2:hover, .type_3:hover, .type_4:hover, .type_5:hover {
+    opacity: 0.8;
+}
+.ct_name, .ct_name_3 {
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+    margin-left: 40px;
+}
+.ct_name_4 {
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+    margin-left: 45px;
+}
+.ct_name_5 {
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+    margin-left: 32px;
+}
+.ct_name_2 {
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+    margin-left: 54px;
+}
+/* Danh sách xe */
+.ct_list {
+    margin-top: 40px;
+    font-weight: 500;
+}
+#list_container {
+    padding: 0 10px;
+}
+#motor_list_1, #motor_list_2 {
+    display: flex;
+}
+.product_1, .product_2, .product_3, .product_4 {
+    padding: 0 7px;
+    border: 1px solid #000;
+    margin: 0 12px;
+}
+.product_1:hover, .product_2:hover, .product_3:hover, .product_4:hover {
+    border: 1px solid red;
+}
+.sample_1, .sample_2, .sample_3, .sample_4 {
+    height: 200px;
+    width: 200px;
+}
+.motor_name {
+    font-size: 12px;
+    color: #333;
+    margin-left: 5%;
+}
+.motor_name_1 {
+    font-size: 12px;
+    color: #333;
+    margin-left: 24%;
+}
+.motor_name_2 {
+    font-size: 12px;
+    color: #333;
+    margin-left: 22%;
+}
+.motor_name_3 {
+    font-size: 12px;
+    color: #333;
+    margin-left: 15%;
+}
+.price_1, .price_2, .price_3, .price_4 {
+    font-size: 12px;
+    margin-left: 29%;
+}
+.price_5 {
+    font-size: 12px;
+    margin-left: 24%;
+}
+/* Click vào button này thì hiện tiếp các sản phẩm tiếp theo */
+#next_btn {
+    width: 100%;
+}
+.desc_show_more {
+    display: block;
+    width: 50%;
+    margin: -1px auto 0;
+    padding: 7px 0;
+    cursor: pointer;
+    border-radius: 0 0 10px 10px;
+    background: #000;
+    border: 1px solid #e1e1e1;
+    text-align: center;
+    color: yellow;
+}
+.desc_show_more:hover {
+    color: #3498db;
+}
+
+
 
 
 /* Footer */
