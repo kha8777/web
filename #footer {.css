@@ -1,0 +1,72 @@
+#footer {
+    text-transform: capitalize;
+    line-height: 30px;
+    justify-content: center;
+    background-color: black;
+    color: whitesmoke;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.GT {
+    display: block;
+    padding: 20px 25px;
+}
+
+.GT h2 {
+    display: block;
+    padding: 20px 0px;
+}
+
+.CS {
+    display: block;
+    padding: 20px 25px;
+}
+
+.CS a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.CS a:hover {
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.CS h2 {
+    display: block;
+    padding: 20px 0px;
+}
+
+.LH {
+    display: block;
+    padding: 20px 25px;
+}
+
+.LH h2 {
+    display: block;
+    padding: 20px 0px;
+}
+
+.CĐ {
+    display: block;
+    padding: 20px 25px;
+}
+
+.CĐ a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.CĐ a:hover {
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.CĐ h2 {
+    display: block;
+    padding: 20px 0px;
+}
+.icon {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
