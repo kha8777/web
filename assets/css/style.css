@@ -685,3 +685,30 @@ main {
     font-size: 1rem;
 }
 
+/*Giới thiệu*/
+/* main */
+#intro {
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-shadow: 1px 2px 3px Indigo;
+ }
+ #information {
+     margin: 20px 100px;
+     text-align: justify;
+     font-size: 20px;
+     line-height: 32px;
+ }
+ #website-sample {
+    margin-left: 20%;
+    border: 1px solid #333;
+    box-shadow: 5px 10px grey;
+    margin-bottom: 50px;
+ }
+ #website-sample:hover {
+     opacity: 0.7;
+ }
+ #web_name {
+     text-align: center;
+     font-weight: 300;
+ }
