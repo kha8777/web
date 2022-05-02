@@ -6,6 +6,7 @@ body {
     --primary-color: #C74B50;
     --primary-color-2: #890F0D;
     --nav-text-color: #ddd;
+    --text-color: #333;
     --line-color-white: rgba(255, 255, 255, .2);
     --line-color-black: rgba(0, 0, 0, .2);
     --primary-color-trans: rgba(204, 0, 0, .1);
@@ -39,8 +40,13 @@ ví dụ:
     transition: all ease .2s;
 }
 
+table {
+    border-collapse: collapse;
+}
+
 a {
     text-decoration: none;
+    color: var(--text-color);
 }
 
 ul {
@@ -61,6 +67,7 @@ ul {
     left: 0;
     right: 0;
     top: 0;
+    z-index: 2;
 }
 
 /* phần navigation bar, bao gồm: trang chủ, sản phẩm, giới thiệu, hãng xe */
@@ -478,8 +485,7 @@ main {
     background-color: #fff;
     width: 1000px;
     margin: 0px auto;
-    /* height: 200px; */
-    box-shadow: 5px 5px 10px #8888;
+    box-shadow: 0 0 10px #8888;
     border: 1px solid #f5f5f5;
 }
 .ct_type {
@@ -533,45 +539,44 @@ main {
 .ct_list {
     margin-top: 40px;
     font-weight: 500;
+    margin-left: 20px;
 }
 #list_container {
-    padding: 0 10px;
+    padding: 0 12px;
 }
 #motor_list_1, #motor_list_2 {
     display: flex;
+    width: 100%;
+    justify-content: space-around;
 }
 .product_1, .product_2, .product_3, .product_4 {
-    padding: 0 7px;
     border: 1px solid #000;
-    margin: 0 12px;
+    border-radius: 5px;
 }
 .product_1:hover, .product_2:hover, .product_3:hover, .product_4:hover {
-    border: 1px solid red;
+    border: 1px solid var(--primary-color);
+}
+
+.product {
+    padding: 6px;
+}
+
+.product a img {
+    max-height: 200px;
+    width: 200px;
 }
 .sample_1, .sample_2, .sample_3, .sample_4 {
     height: 200px;
     width: 200px;
 }
 .motor_name {
-    font-size: 12px;
+    font-size: 14px;
     color: #333;
-    margin-left: 5%;
+    display: block;
+    max-width: 200px;
+    text-align: center;
 }
-.motor_name_1 {
-    font-size: 12px;
-    color: #333;
-    margin-left: 24%;
-}
-.motor_name_2 {
-    font-size: 12px;
-    color: #333;
-    margin-left: 22%;
-}
-.motor_name_3 {
-    font-size: 12px;
-    color: #333;
-    margin-left: 15%;
-}
+
 .price_1, .price_2, .price_3, .price_4 {
     font-size: 12px;
     margin-left: 29%;
@@ -586,21 +591,27 @@ main {
 }
 .desc_show_more {
     display: block;
-    width: 50%;
-    margin: -1px auto 0;
+    width: 300px;
+    margin: 0 auto 40px;
     padding: 7px 0;
     cursor: pointer;
     border-radius: 0 0 10px 10px;
-    background: #000;
+    background: var(--primary-color);
     border: 1px solid #e1e1e1;
     text-align: center;
-    color: yellow;
+    color: white;
+    position: relative;
 }
 .desc_show_more:hover {
-    color: #3498db;
+    opacity: .8;
 }
 
-
+.dropdown-icon {
+    position: absolute;
+    top: 11px;
+    width: 12px;
+    height: 12px;
+}
 
 
 /* Footer */
@@ -692,23 +703,104 @@ main {
     font-weight: 400;
     letter-spacing: 2px;
     text-shadow: 1px 2px 3px Indigo;
- }
- #information {
-     margin: 20px 100px;
-     text-align: justify;
-     font-size: 20px;
-     line-height: 32px;
- }
- #website-sample {
+}
+#information {
+    margin: 20px 100px;
+    text-align: justify;
+    font-size: 20px;
+    line-height: 32px;
+}
+#website-sample {
     margin-left: 20%;
     border: 1px solid #333;
     box-shadow: 5px 10px grey;
     margin-bottom: 50px;
- }
- #website-sample:hover {
-     opacity: 0.7;
- }
- #web_name {
-     text-align: center;
-     font-weight: 300;
- }
+}
+#website-sample:hover {
+    opacity: 0.7;
+}
+#web_name {
+    text-align: center;
+    font-weight: 300;
+}
+
+/* Chi tiết sản phẩm */
+.breadcrumbs {
+    padding: 20px 0 12px 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.breadcrumbs ul {
+    display: flex;
+}
+
+.breadcrumbs ul li::after {
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+    content: "\203A";
+}
+
+.breadcrumbs ul li:last-child:after {
+    display: none;
+}
+
+.breadcrumbs ul li a:hover {
+    color: var(--primary-color);
+}
+
+.bike-title {
+    margin: 12px;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.bike-main {
+    display: flex;
+}
+
+.bike-img {
+    width: 30%;
+    max-height: 300px;
+    margin: 0 20px;
+}
+
+.bike-detail {
+    width: 70%;
+}
+
+.bike-price {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.bike-detail__table {
+    width: 100%;
+    margin-top: 12px;
+}
+
+.bike-detail__table tr td {
+    padding: 6px 0;
+}
+
+.bike-detail__table tr td:nth-child(odd) {
+    font-weight: 700;
+}
+
+.buynow {
+    border: none;
+    margin: 20px 60px 0 0;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.buynow:hover {
+    cursor: pointer;
+    opacity: .8;
+}
